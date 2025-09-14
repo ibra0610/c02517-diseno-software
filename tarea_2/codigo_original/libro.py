@@ -8,7 +8,7 @@ disponible=True):
         self.anio_publicacion = anio_publicacion
         self.disponible = disponible
     
-    def calcular_popularidad(self):
+    def calcular_popularidad(self): # Violacion de principio open/closed
         if self.genero == 'novela':
             base = 50
             extra = self.paginas / 10
@@ -23,13 +23,13 @@ disponible=True):
             extra = 0
         return base + extra
     
-    def es_antiguo(self):
+    def es_antiguo(self): # Error keep it simple, el if es innecesario
         if self.anio_publicacion < 1980:
             return True
         else:
             return False
     
-    def imprimir_datos(self):
+    def imprimir_datos(self): # libro no deberia imprimir directamente, se pueden retornar
         print(f"Título: {self.titulo}")
         print(f"Autor: {self.autor}")
         print(f"Género: {self.genero}")

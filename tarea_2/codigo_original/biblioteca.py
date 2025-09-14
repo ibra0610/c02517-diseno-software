@@ -1,9 +1,10 @@
- from libro import Libro
- class Biblioteca:
+from libro import Libro
+ 
+class Biblioteca:
     def __init__(self):
         self.libros = []
     
-    def agregar_libro(self):
+    def agregar_libro(self): # Error de responsabilidades aqui, input puede ir en una funcion diferente
         titulo = input("Título: ")
         autor = input("Autor: ")
         genero = input("Género (novela/ciencia/historia): ").lower()
@@ -14,7 +15,7 @@
         self.libros.append(l)
         print("Libro agregado!")
     
-    def generar_reporte(self):
+    def generar_reporte(self): # Error de responsabilidades aqui, imprimir puede ir en una funcion diferente
         total = len(self.libros)
         antiguos = 0
         disponibles = 0
@@ -32,5 +33,4 @@
         print(f"Total libros: {total}")
         print(f"Disponibles: {disponibles}")
         print(f"Antiguos: {antiguos}")
-        print(f"Promedio de popularidad: {popularidad_total / total if total > 0 
-else 0}")
+        print(f"Promedio de popularidad: {popularidad_total / total if total > 0 else 0}")
