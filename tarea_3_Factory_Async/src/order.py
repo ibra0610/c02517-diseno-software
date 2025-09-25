@@ -8,6 +8,9 @@ class Order:
     # Prepare ordered food
     def cook(self):
         pass
-
+    
+    # Get the type of order
+    def get_type(self):
+        pass
 
         

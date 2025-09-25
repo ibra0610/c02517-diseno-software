@@ -10,3 +10,7 @@ class Order_Burger(Order_Manager):
     # Creates a Burger order
     def create_order(self, name, order_id):
         return Burger(name, order_id)
+    
+    # Get the type of order
+    def get_type(self):
+        return "Burger"

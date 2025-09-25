@@ -10,3 +10,6 @@ class Pizza(Order):
     def cook(self):
         return f"Preparing order {self.order_id} (Pizza)"
     
+    # Get the type of order
+    def get_type(self):
+        return "Pizza"
