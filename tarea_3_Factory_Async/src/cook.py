@@ -2,6 +2,7 @@ import threading
 import queue
 from order import Order
 
+
 class Cook(threading.Thread):
 
     # Builder for cook class
@@ -21,8 +22,10 @@ class Cook(threading.Thread):
 
                 # Process food order
                 with self.lock:
-                    print(f"[{self.name}] Preparing order {order.order_id} ({order.get_type()})")
-                
+                    print(
+                        f"[{self.name}] Preparing order {order.order_id} ({order.get_type()})"
+                    )
+
                 # Prepare the order
                 result = order.cook()
 
@@ -32,7 +35,7 @@ class Cook(threading.Thread):
 
                 # Mark order as completed
                 self.order_queue.task_done()
-            
+
             # In case there are no more orders in queue
             except queue.Empty:
                 break

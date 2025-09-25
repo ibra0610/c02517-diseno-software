@@ -1,5 +1,6 @@
 from order_manager import Order_Manager
-from pizza import Pizza 
+from pizza import Pizza
+
 
 class Order_Pizza(Order_Manager):
 
@@ -10,4 +11,3 @@ class Order_Pizza(Order_Manager):
     # Creates a Pizza order
     def create_order(self, name, order_id):
         return Pizza(name, order_id)
-    
