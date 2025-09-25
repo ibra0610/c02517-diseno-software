@@ -17,7 +17,7 @@ class Cook(threading.Thread):
         while True:
             try:
                 # Get an order from the queue
-                order = self.order_queue.get()
+                order = self.order_queue.get(timeout=1)
 
                 # Process food order
                 with self.lock:
@@ -30,6 +30,7 @@ class Cook(threading.Thread):
                 with self.lock:
                     print(f"[{self.name}] Order {order.order_id} prepared: {result}")
 
+                # Mark order as completed
                 self.order_queue.task_done()
             
             # In case there are no more orders in queue

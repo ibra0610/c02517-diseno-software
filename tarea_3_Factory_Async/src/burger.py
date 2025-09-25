@@ -1,4 +1,5 @@
 from order import Order
+import time
 
 class Burger(Order):
 
@@ -8,5 +9,10 @@ class Burger(Order):
 
     # Prepare Burger
     def cook(self):
-        return f"Preparing order {self.order_id} (Burger)" 
+        time.sleep(0.1)
+        return f"Burger {self.order_id} prepared ({self.name})" 
+    
+    # Get the type of order
+    def get_type(self):
+        return f"Burger: {self.name}"
     
