@@ -11,9 +11,9 @@ class ItemMenu(ABC):
     """
 
     @abstractmethod
-    def get_description(self) -> str:
+    def get_descripcion(self) -> str:
         pass
 
     @abstractmethod
-    def get_price(self) -> float:
+    def get_precio(self) -> float:
         pass
