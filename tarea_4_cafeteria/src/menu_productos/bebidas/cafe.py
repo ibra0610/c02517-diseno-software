@@ -1,8 +1,8 @@
 from ..item_menu import ItemMenu
 
-class Croissant(ItemMenu):
+class Cafe(ItemMenu):
     def get_descripcion(self) -> str:
-        return "Croissant"
+        return "Café"
 
     def get_precio(self) -> float:
-        return 3.00
+        return 2.50

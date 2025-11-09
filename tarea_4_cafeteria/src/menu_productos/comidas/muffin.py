@@ -1,8 +1,8 @@
 from ..item_menu import ItemMenu
 
 class Muffin(ItemMenu):
-    def get_description(self) -> str:
+    def get_descripcion(self) -> str:
         return "Muffin"
 
-    def get_price(self) -> float:
+    def get_precio(self) -> float:
         return 2.75

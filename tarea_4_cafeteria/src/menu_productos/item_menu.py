@@ -12,14 +12,8 @@ class ItemMenu(ABC):
 
     @abstractmethod
     def get_description(self) -> str:
-        """
-        Método abstracto para obtener la descripción del item del menú.
-        """
         pass
 
     @abstractmethod
     def get_price(self) -> float:
-        """
-        Método abstracto para obtener el precio del item del menú.
-        """
         pass
