@@ -3,21 +3,21 @@ main.py
 Simula el flujo completo de pedidos
 """
 
-from menu_productos.bebidas.cafe import Cafe
-from menu_productos.bebidas.te import Te
-from patron_decorador.decoradores_bebida.con_canela import ConCanela
-from patron_decorador.decoradores_bebida.con_crema import ConCrema
-from patron_decorador.decoradores_bebida.con_leche import ConLeche
-from menu_productos.comidas.croissant import Croissant
-from menu_productos.comidas.muffin import Muffin
-from menu_productos.comidas.tostada import Tostada
-from patron_decorador.decoradores_comida.con_relleno import ConRelleno
-from patron_decorador.decoradores_comida.con_topping import ConTopping
-from patron_observer.cliente import Cliente
-from patron_command.pedido import Pedido
-from patron_command.preparar_bebida import PrepararBebida
-from patron_command.preparar_comida import PrepararComida
-from sistema_cafeteria import SistemaCafeteria
+from .menu_productos.bebidas.cafe import Cafe
+from .menu_productos.bebidas.te import Te
+from .patron_decorador.decoradores_bebida.con_canela import ConCanela
+from .patron_decorador.decoradores_bebida.con_crema import ConCrema
+from .patron_decorador.decoradores_bebida.con_leche import ConLeche
+from .menu_productos.comidas.croissant import Croissant
+from .menu_productos.comidas.muffin import Muffin
+from .menu_productos.comidas.tostada import Tostada
+from .patron_decorador.decoradores_comida.con_relleno import ConRelleno
+from .patron_decorador.decoradores_comida.con_topping import ConTopping
+from .patron_observer.cliente import Cliente
+from .patron_command.pedido import Pedido
+from .patron_command.preparar_bebida import PrepararBebida
+from .patron_command.preparar_comida import PrepararComida
+from .sistema_cafeteria import SistemaCafeteria
 
 def main():
     """Función principal que simula el sistema de cafetería"""

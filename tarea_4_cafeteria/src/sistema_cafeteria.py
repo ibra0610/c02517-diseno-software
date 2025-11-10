@@ -4,9 +4,9 @@ Sistema principal que gestiona los pedidos y notificaciones
 """
 
 from typing import List
-from patron_observer.subject import Subject
-from patron_observer.observer import Observer
-from patron_command.pedido import Pedido
+from .patron_observer.subject import Subject
+from .patron_observer.observer import Observer
+from .patron_command.pedido import Pedido
 
 class SistemaCafeteria(Subject):
     """Sistema principal que gestiona los pedidos y notificaciones"""

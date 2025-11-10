@@ -1,4 +1,4 @@
-from observer import Observer
+from .observer import Observer
 from typing import List
 from ..menu_productos.item_menu import ItemMenu
 

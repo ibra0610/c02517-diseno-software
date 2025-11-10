@@ -1,6 +1,6 @@
 from ..patron_observer.cliente import Cliente
 from typing import List
-from command import Command
+from .command import Command
 
 class Pedido:
     """

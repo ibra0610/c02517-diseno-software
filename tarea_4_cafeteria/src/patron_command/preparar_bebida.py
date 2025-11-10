@@ -1,5 +1,5 @@
 from ..menu_productos.item_menu import ItemMenu
-from command import Command
+from .command import Command
 
 class PrepararBebida(Command):
 

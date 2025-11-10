@@ -3,7 +3,7 @@ decorators.py
 Decorador base para los items del menú de la cafetería.
 """
 
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from ..menu_productos.item_menu import ItemMenu
 
 class ItemDecorator(ItemMenu):

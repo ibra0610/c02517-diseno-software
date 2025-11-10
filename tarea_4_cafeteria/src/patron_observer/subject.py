@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from observer import Observer
+from .observer import Observer
 
 
 class Subject(ABC):

@@ -1,5 +1,5 @@
 from ..menu_productos.item_menu import ItemMenu
-from command import Command
+from .command import Command
 
 class PrepararComida(Command):
 
@@ -9,4 +9,3 @@ class PrepararComida(Command):
     def ejecutar(self):
         print(f"[Pastelero]: Preparo alimento: {self.item.get_descripcion()}")
 
-        
